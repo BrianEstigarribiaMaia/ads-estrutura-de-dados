@@ -1,9 +1,9 @@
-/*1.	Faça um algoritmo que leia 22 números inteiros positivos maiores 
-que zero. A cada número informado calcule e mostre:
-a.	O número digitado;
-b.	A metade do número digitado;
-c.	O dobro do número digitado;
-d.	O número digitado ao cubo. */
+/*1.	FaÃ§a um algoritmo que leia 22 nÃºmeros inteiros positivos maiores 
+que zero. A cada nÃºmero informado calcule e mostre:
+a.	O nÃºmero digitado;
+b.	A metade do nÃºmero digitado;
+c.	O dobro do nÃºmero digitado;
+d.	O nÃºmero digitado ao cubo. */
 
 #include <stdio.h>
 #include <stdlib.h>
