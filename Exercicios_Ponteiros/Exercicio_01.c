@@ -1,8 +1,8 @@
-/*1.	Implementar uma função que calcule a área da 
-superfície e volume de uma esfera de raio r. Essa função deve obedecer ao protótipo:
+/*1.	Implementar uma funÃ§Äƒo que calcule a Ã¡rea da 
+superfÃ­cie e volume de uma esfera de raio r. Essa funÃ§Äƒo deve obedecer ao protÃ³tipo:
 
-void calc_esfera (float r, float* área, float* volume);
-Área = 4r2
+void calc_esfera (float r, float* Ã¡rea, float* volume);
+Ãrea = 4r2
 Volume = 4r3/3 */
 
 
