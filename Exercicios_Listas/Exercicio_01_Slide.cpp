@@ -1,12 +1,12 @@
 /*--------------------------------EX_01-----------------------------------
 
-* Criar o procedimento para inserir em uma posição específica da lista
+* Criar o procedimento para inserir em uma posiÃ§Ã£o especÃ­fica da lista
 void inserir_elemento_na_posicao(No * primeiro, No * novo, int posicao)
 
 * Criar uma lista de alunos, contendo o nome,
-número de matrícula e idade.
+nÃºmero de matrÃ­cula e idade.
 
-*Apresentar a média de idade dos alunos contidos na
+*Apresentar a mÃ©dia de idade dos alunos contidos na
 lista.
 
 ------------------------------------------------------------------------*/
@@ -78,7 +78,7 @@ void mostrar_lista(Aluno *lista){
    }
 }
 
-//FUNÇÃO MAIN
+//FUNÃ‡ÃƒO MAIN
 int main(){
 	setlocale(LC_ALL,"");
 	float media = 0.0;
