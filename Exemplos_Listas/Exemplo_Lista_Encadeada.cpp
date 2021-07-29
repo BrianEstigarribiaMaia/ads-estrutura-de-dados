@@ -155,21 +155,21 @@ No *inserir_elemento_na_posicao(No *lista, No *novo, int posicao){
    system("PAUSE");
 
 
-   printf("Removendo o elemento da posição 1 da lista \n");
+   printf("Removendo o elemento da posiÃ§Ã£o 1 da lista \n");
    lista = remove_elemento(lista, 1);
 
    // Apresenta a lista
    apresenta_lista(lista);
    system("PAUSE");
 
-   printf("Removendo o elemento da posição 2 da lista \n");
+   printf("Removendo o elemento da posiÃ§Ã£o 2 da lista \n");
    lista = remove_elemento(lista, 2);
 
    // Apresenta a lista
   apresenta_lista(lista);
   system ("pause");
  
-   printf("Removendo o elemento da posição 3 da lista \n");
+   printf("Removendo o elemento da posiÃ§Ã£o 3 da lista \n");
    lista = remove_elemento(lista, 3);
 
    // Apresenta a lista
