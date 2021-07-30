@@ -49,7 +49,7 @@ void enqueue(descritor * desc, elemento * novo){
 }
 
 
-//Remove um elemento da fila seguindo o critério FIFO
+//Remove um elemento da fila seguindo o critÃ©rio FIFO
 elemento * dequeue(descritor * desc){
    if (empty(desc) == 0){
       elemento * aux = desc->ptr_inicio_fila;
