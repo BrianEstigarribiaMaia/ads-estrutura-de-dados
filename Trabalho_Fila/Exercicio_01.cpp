@@ -1,22 +1,22 @@
 /*********************************************************************
-	Implemente uma fila de pessoas que deverá possuir os             *
+	Implemente uma fila de pessoas que deverÃ¡ possuir os             *
 	atributos: RG, dinheiro, idade e cidade (local de nascimento).   *
 	Devem ser inseridas 100 pessoas na fila e os atributos devem ser *
-	preenchidos de forma aleatória (com limites dos valores          *
+	preenchidos de forma aleatÃ³ria (com limites dos valores          *
 	coerentes). Crie 5 cidades diferentes para preenchimento         *
-	aleatório. Após criar os nodos, apresente em funções distintas:  *
+	aleatÃ³rio. ApÃ³s criar os nodos, apresente em funÃ§Ãµes distintas:  *
                                                                      *
-	a) Média de idade das pessoas na fila;                           *
+	a) MÃ©dia de idade das pessoas na fila;                           *
 	b) Maior idade registrada na fila;                               *
 	c) Menor idade registrada na fila;                               *
-	d) Quantidade de crianças, jovens e adultos na fila (utilizar    *
-	critério brasileiro);                                            *
-	e) Média de dinheiro das pessoas da fila;                        *
+	d) Quantidade de crianÃ§as, jovens e adultos na fila (utilizar    *
+	critÃ©rio brasileiro);                                            *
+	e) MÃ©dia de dinheiro das pessoas da fila;                        *
 	f) Soma de dinheiro das pessoas da fila;                         *
 	g) Exibir todos os RGs das pessoas na fila separados por         *
 	cidade.                                                          *
 	                                                                 *
-	Matéria: Estrutura de dados                                      *
+	MatÃ©ria: Estrutura de dados                                      *
 	Aluno: Brian Estigarribia                                        *
                                                                      *
 **********************************************************************/
@@ -42,7 +42,7 @@ typedef struct descritor{
   struct elemento * ptr_fim_fila;
 }descritor;
 
-/* Operações sobre a fila */
+/* OperaÃ§Ãµes sobre a fila */
 //Criacao de um elemento da fila
 elemento * cria_elemento(int idade, int rg, float dinheiro, char cidade[50]){
   elemento *novo;
@@ -77,7 +77,7 @@ void enqueue(descritor *desc, elemento *novo){
 }
 
 
-//Remove um elemento da fila seguindo o critério FIFO
+//Remove um elemento da fila seguindo o critÃ©rio FIFO
 elemento * dequeue(descritor *desc){
    if (empty(desc) == 0){
       elemento * aux = desc->ptr_inicio_fila;
@@ -106,8 +106,8 @@ void mostrar_fila(elemento *fila){
     }
 }
 
-/* Funções exercicio 1 */
-//Função média de idade
+/* FunÃ§Ãµes exercicio 1 */
+//FunÃ§Ã£o mÃ©dia de idade
 void media_idade(descritor *desc)
 {
 	int soma = 0;
@@ -126,7 +126,7 @@ void media_idade(descritor *desc)
 	printf("----------------------------------\n");
 }
 
-//Função maior idade
+//FunÃ§Ã£o maior idade
 void maior_idade(descritor *desc)
 {
 	int maior = 0;
@@ -142,7 +142,7 @@ void maior_idade(descritor *desc)
 	printf("----------------------------------\n");
 }
 
-//Função menor idade
+//FunÃ§Ã£o menor idade
 void menor_idade(descritor *desc)
 {
 	int menor;
@@ -159,7 +159,7 @@ void menor_idade(descritor *desc)
 	printf("----------------------------------\n");
 }
 
-//Função faixa etaria
+//FunÃ§Ã£o faixa etaria
 void faixa_etaria(descritor *desc)
 {
 	int crianca = 0;
@@ -184,7 +184,7 @@ void faixa_etaria(descritor *desc)
 	printf("----------------------------------\n");
 }
 
-//Função media dinheiro
+//FunÃ§Ã£o media dinheiro
 void media_dinheiro(descritor *desc)
 {
 	float soma = 0;
@@ -203,7 +203,7 @@ void media_dinheiro(descritor *desc)
 	printf("----------------------------------\n");
 }
 
-//Função soma dinheiro
+//FunÃ§Ã£o soma dinheiro
 void soma_dinheiro(descritor *desc)
 {
 	float soma = 0;
@@ -217,7 +217,7 @@ void soma_dinheiro(descritor *desc)
 	printf("----------------------------------\n");
 }
 
-//Função rg por cidades
+//FunÃ§Ã£o rg por cidades
 void rg_cidade(descritor *desc)
 {
 	elemento* aux = desc->ptr_inicio_fila;
