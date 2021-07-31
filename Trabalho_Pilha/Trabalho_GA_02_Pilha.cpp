@@ -1,31 +1,31 @@
 /*******************************************************************************************************
-Você foi designado para implementar uma pilha com quantidade de elementos determinada pelo usuário.
-A pilha deve conter as seguintes informações em cada elemento:
+VocÃª foi designado para implementar uma pilha com quantidade de elementos determinada pelo usuÃ¡rio.
+A pilha deve conter as seguintes informaÃ§Ãµes em cada elemento:
 - id (tipo int);
 - lista (tipo No).
 
-A lista (que deve ser duplamente encadeada) deverá conter em cada nodo:
+A lista (que deve ser duplamente encadeada) deverÃ¡ conter em cada nodo:
 - registro (tipo int);
 - valor (tipo float).
 
-O Main() do programa deverá conter 3 operações básicas:
-- Criação da pilha;
-- Chamada de função para definir o escopo da pilha e das listas;
-- Chamada de função para mostrar a estrutura da pilha e das listas contidas em cada elemento da pilha.
+O Main() do programa deverÃ¡ conter 3 operaÃ§Ãµes bÃ¡sicas:
+- CriaÃ§Ã£o da pilha;
+- Chamada de funÃ§Ã£o para definir o escopo da pilha e das listas;
+- Chamada de funÃ§Ã£o para mostrar a estrutura da pilha e das listas contidas em cada elemento da pilha.
 
-A função que define o escopo das pilhas e das listas deverá:
-- Permitir que o usuário defina quantos elementos possui a pilha;
+A funÃ§Ã£o que define o escopo das pilhas e das listas deverÃ¡:
+- Permitir que o usuÃ¡rio defina quantos elementos possui a pilha;
 - Definir o ID de cada pilha (int);
 - Definir a quantidade de nodos na lista dentro dos elementos da pilha;
 - Definir o registro de cada nodo da lista (int);
 - Definir o valor de cada nodo da lista (float);
 
-A função que mostra a estrutura da pilha e das listas deverá:
-- Mostrar o ID de cada elemento da pilha e qual é o do topo;
-- Mostrar cada nodo da lista contida dentro dos elementos da pilha e suas variáveis (registro e valor);
+A funÃ§Ã£o que mostra a estrutura da pilha e das listas deverÃ¡:
+- Mostrar o ID de cada elemento da pilha e qual Ã© o do topo;
+- Mostrar cada nodo da lista contida dentro dos elementos da pilha e suas variÃ¡veis (registro e valor);
 
-Além disso, a sua implementação deve permitir que a
-operação pop seja realizada na pilha. Realize-a e chame a função
+AlÃ©m disso, a sua implementaÃ§Ã£o deve permitir que a
+operaÃ§Ã£o pop seja realizada na pilha. Realize-a e chame a funÃ§Ã£o
 de mostrar a pilha
 ***********************************************************************************************************/
 
@@ -121,7 +121,7 @@ No * remove_elemento(No * lista, int posicao){
 
       aux->anterior->proximo = aux->proximo;
 
-      //exclusão do último não necessita atualizar a referencia de um elemento posterior
+      //exclusÃ£o do Ãºltimo nÃ£o necessita atualizar a referencia de um elemento posterior
       if (aux->proximo != NULL){
         aux->proximo->anterior = aux->anterior;
       }
@@ -135,7 +135,7 @@ No * remove_elemento(No * lista, int posicao){
 
 No * insere_na_lista(No * lista, No * novo, int posicao){
   No * aux = lista;
-  //Inclusão no inicio
+  //InclusÃ£o no inicio
   if (lista == NULL || posicao == 1){
      lista = insere_primeiro(lista, novo);
   }else{
@@ -144,11 +144,11 @@ No * insere_na_lista(No * lista, No * novo, int posicao){
       aux = aux->proximo;
       cont++;
     }
-    //Inclusão no último
+    //InclusÃ£o no Ãºltimo
     if (aux->proximo == NULL){
        insere_ultimo(lista, novo);
     }else{
-       //inclusão em outro ponto
+       //inclusÃ£o em outro ponto
        
        aux->anterior->proximo = novo;
        novo->proximo  = aux;
