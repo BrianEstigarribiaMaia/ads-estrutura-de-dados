@@ -1,7 +1,7 @@
 /**********************************************
 
-Escreva uma função que recebe um inteiro N e
-retorna o somatório de todos os números entre 0
+Escreva uma funÃ§Ã£o que recebe um inteiro N e
+retorna o somatÃ³rio de todos os nÃºmeros entre 0
 e N
 
 **********************************************/
